@@ -206,9 +206,9 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 				$line = htmlspecialchars( $line );
 			}
 			if (  $this->_show_split_view ) {
-				$r .= '<tr>' . $this->contextLine( $line ) . $this->emptyLine() . $this->contextLine( $line )  . "</tr>\n";
+				$r .= '<tr class="tr-diff-context">' . $this->contextLine( $line ) . $this->emptyLine() . $this->contextLine( $line )  . "</tr>\n";
 			} else {
-				$r .= '<tr>' . $this->contextLine( $line ) . "</tr>\n";
+				$r .= '<tr class="tr-diff-context">' . $this->contextLine( $line ) . "</tr>\n";
 			}
 		}
 		return $r;
