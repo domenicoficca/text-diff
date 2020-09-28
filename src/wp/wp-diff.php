@@ -111,8 +111,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 	 * @return string
 	 */
 	public function addedLine( $line ) {
-		return "<td class='diff-addedline'>{$line}</td>";
-
+		return "<td>{$line}</td>";
 	}
 
 	/**
@@ -122,7 +121,7 @@ class WP_Text_Diff_Renderer_Table extends Text_Diff_Renderer {
 	 * @return string
 	 */
 	public function deletedLine( $line ) {
-		return "<td class='diff-deletedline'>{$line}</td>";
+		return "<td>{$line}</td>";
 	}
 
 	/**
